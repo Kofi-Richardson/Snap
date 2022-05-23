@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,300;0,400;0,500;0,600;0,700;1,600;1,700&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+:root{
+    /* colors  */
+    --AlmostWhite: hsl(0, 0%, 98%);
+    --MediumGray: hsl(0, 0%, 41%);
+    --AlmostBlack: hsl(0, 0%, 8%);
+
+
+    /* FontWeight */
+    --200:200;
+    --300:300;
+    --400:400;
+    --500:500;
+    --600:600
+    --700: 700;
+
+    /* FontSize  */
+    --paragraph : 18px;
+
+    /* Fonts  */
+    --Epilouge:'Epilogue', sans-serif;
+
+    /* Device width  */
+
+    --Mobile: 375px;
+    --Desktop: 1440px;
+    
+}
+
+body{
+    font-family: var(--Epilouge);
+    font-weight: var(--400);
+    color: var(--AlmostBlack);
+    
+}
+
+ul{
+    list-style: none;
+}
+
+.headerSpacing{
+    margin: 0px 25px;
+}
+
+.pointer:hover{
+    color: var(--AlmostBlack);
+    cursor: pointer;
+}
+
+
+
+/* Styling the elements in the header components  */
+
+.header{
+    display: flex;
+    padding: 20px;
+    align-items: center;
+}
+
+.navBar{
+    margin-right: auto;
+    font-size: 14px;
+}
+
+.navBar ul{
+    display: flex;
+    color: var(--MediumGray);
+}
+
+.navBar ul li{
+    margin: 0px 15px;
+}
+
+
+
+.buttons{
+    background-color: transparent;
+    color: var(--MediumGray);
+    border: none;
+    font-family: var(--Epilouge);
+    margin: 0px 10px;
+    font-size: 14px;
+}
+
+
+
+#registerButton{
+    border: 1.5px solid var(--MediumGray);
+    border-radius: 10px;
+    padding: 11px;
+    width: 86px;
+
+}
+
+
+
+/* Styling the Elements in the Banner Section  */
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    width: 1200px;
+    margin: 0px auto;
+
+}
+
+.containerLettering{
+    margin: 20px 0px;
+    width: 600px;
+    
+}
+
+ .containerLettering h1{
+     font-size: 75px;
+     font-weight: 700;
+     width: 500px;
+ }
+
+ .containerLettering p{
+     color: var(--MediumGray);
+     line-height: 1.5;
+     width: 400px;
+     word-spacing: 3px;
+ }
+
+ .containerLetteringButton{
+     margin: 0px;
+     padding: 0px;
+ }
+
+ #learnMore{
+     color: white;
+     background-color: black;
+     border: 1.5px solid var(--AlmostBlack);
+     border-radius: 11px;
+     padding: 15px;
+     margin: 0px;
+     width: 140px;
+     font-size: 16px;
+     font-weight: 600;
+ }
+
+ #learnMore:hover{
+     cursor: pointer;
+     background-color: transparent;
+     color: var(--AlmostBlack);
+ }
+
+ .containerSponsers ul{
+    display: flex;
+ }
+
+ .containerSponsers ul li{
+     margin: 0px 15px;
+ }
+
+ .containerBanner{
+     display: flex;
+     width:600px;
+     justify-content: center;
+ }
