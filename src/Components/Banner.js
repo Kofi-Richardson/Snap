@@ -9,19 +9,24 @@ import './Components.css'
 export default function Banner() {
     return (
         <div className='container'>
-            <div className='containerLettering'>
-                <h1>Make remote work</h1>
+            <div className='containerLettering '>
+                <div className='letteringHead '>
+                    <h1>Make remote work</h1>
+                </div>
+                
 
-                <p>
-                    Get your team in sync, no matter your location. Streamline processes, 
-                    create team rituals, and watch productivity soar.
-                </p>
+                <div className='letteringP '>
+                     <p> Get your team in sync, no matter your location. Streamline processes, 
+                    create team rituals, and watch productivity soar.</p>
 
-                <div className='containerLetteringButton'>
+                </div>
+
+               
+                <div className='containerLetteringButton '>
                 <button className='buttons' id='learnMore'>Learn more</button>
                 </div>
 
-                <div className='containerSponsers'>
+                <div className='containerSponsers '>
                     <ul>
                         <li><Databiz /></li>
                         <li><Audiophile /></li>

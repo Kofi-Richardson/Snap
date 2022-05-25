@@ -49,6 +49,8 @@ ul{
     margin: 0px 25px;
 }
 
+
+
 .pointer:hover{
     color: var(--AlmostBlack);
     cursor: pointer;
@@ -116,15 +118,17 @@ ul{
     margin: 20px 0px;
     width: 600px;
     
+    
 }
 
- .containerLettering h1{
+ .letteringHead h1{
      font-size: 75px;
      font-weight: 700;
      width: 500px;
+     
  }
 
- .containerLettering p{
+ .letteringP p{
      color: var(--MediumGray);
      line-height: 1.5;
      width: 400px;
