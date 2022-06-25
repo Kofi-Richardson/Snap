@@ -50,10 +50,23 @@ ul{
 }
 
 
+button{
+    background-color: transparent;
+    border: none;
+}
+
 
 .pointer:hover{
     color: var(--AlmostBlack);
     cursor: pointer;
+}
+.feature{
+    display: none;
+}
+
+a{
+    text-decoration: none;
+    color: var(--AlmostBlack);
 }
 
 
@@ -64,6 +77,7 @@ ul{
     display: flex;
     padding: 20px;
     align-items: center;
+    position: relative;
 }
 
 .navBar{
@@ -77,8 +91,9 @@ ul{
 }
 
 .navBar ul li{
-    margin: 0px 15px;
+    margin: 0px 30px;
 }
+
 
 
 
@@ -101,6 +116,10 @@ ul{
 
 }
 
+.mobile-menu{
+    /* display: none; */
+}
+
 
 
 /* Styling the Elements in the Banner Section  */
@@ -113,18 +132,28 @@ ul{
     margin: 0px auto;
 
 }
+.containerBannerMobile{
+    display: none;
+}
 
 .containerLettering{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     margin: 20px 0px;
     width: 600px;
     
     
+}
+.letteringHead{
+    margin-top: 120px;
 }
 
  .letteringHead h1{
      font-size: 75px;
      font-weight: 700;
      width: 500px;
+    
      
  }
 
@@ -133,10 +162,11 @@ ul{
      line-height: 1.5;
      width: 400px;
      word-spacing: 3px;
+     margin-top: 45px;
  }
 
  .containerLetteringButton{
-     margin: 0px;
+     margin-top: 50px;
      padding: 0px;
  }
 
@@ -151,13 +181,15 @@ ul{
      font-size: 16px;
      font-weight: 600;
  }
-
+    
  #learnMore:hover{
      cursor: pointer;
      background-color: transparent;
      color: var(--AlmostBlack);
  }
-
+  .containerSponsers{
+      margin-top: 80px;
+  }
  .containerSponsers ul{
     display: flex;
  }
@@ -171,3 +203,195 @@ ul{
      width:600px;
      justify-content: center;
  }
+
+
+ /* styling feature */
+ .dropDown{
+     background-color: white;
+     color: var(--AlmostBlack);
+     width: 138px;
+     height: 150px;
+     display: flex;
+     font-size: 12px;
+     justify-content: center;
+     align-items: center;
+     border-radius: 10px;
+     padding: 10px;
+     /* display: none; */
+     position: absolute;
+     top: 52px;
+     left: 136px;
+     box-shadow: 0px 1px 20px rgba(0,0,0,0.3);
+    
+ }
+
+
+ .dropDown ul li,.dropDownTwo ul li{
+     margin: 10px 0px;
+ }
+
+ .dropDown ul,.dropDownTwo ul{
+     flex-direction: column;
+ }
+
+ .dropDownTwo{
+     background-color: white;
+     color: var(--AlmostBlack);
+     width: 102px;
+     height: 110px;
+     font-size: 14px;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     border-radius: 10px;
+     /* display: none; */
+     flex-direction: column;
+     position: absolute;
+     top: 52px;
+     left: 309px;
+     box-shadow: 0px 1px 20px rgba(0,0,0,0.3);
+ }
+.menuButton{
+    display: none;
+}
+
+
+
+ /* Responsive Design  */
+
+ @media screen and (max-width: 375px){
+     
+
+     .Logo{
+         margin-right: 230px;
+         margin-left: 0px;
+     }
+     .header{
+    display: column;
+    padding: 20px;
+    align-items: center;
+    position: relative;
+    }
+    .headerButtons{
+        display: none;
+    }
+
+.navBar{
+    margin-right: auto;
+    font-size: 14px;
+    display: none;
+}
+
+.menuButton{
+    display: block;
+    z-index: 2;
+}
+
+
+
+/* Styling Banner Conatainer */
+
+.container{
+    width: 375px;
+    display: block;
+}
+.containerBanner{
+    display: none;
+}
+
+.containerBannerMobile{
+    display: block;
+}
+.letteringHead{
+    margin-top: 50px;
+}
+
+ .letteringHead h1{
+     font-size: 36px;
+     font-weight: 700;
+     width: 375px;
+     text-align: center;
+    
+     
+ }
+
+ .letteringP p{
+    width: 375px;
+    word-spacing: 2.5px;
+    margin-top: 20px;
+
+ }
+
+
+
+ .space{
+     text-align: center;
+     justify-content: center;
+    
+ }
+
+ .containerLettering{
+     width: 375px;
+ }
+
+ .containerSponsers{
+     margin-top: 30px;
+ }
+
+ .containerSponsers ul{
+     flex-direction: column;
+     
+ }
+
+}
+
+/* Mobile dropdown */
+.mobile-menu{
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    background-color: #ffffff;
+    color: var(--MediumGray);
+    width: 50vw;
+    height: 100vh;
+    text-align: left;
+    padding: 20px;
+    /* display: none; */
+
+}
+
+.mobile-menu-lower{
+    margin: 27% 0px;
+    line-height: 30px;
+    word-spacing: 1.5px;
+}
+
+.mobile-menu-lower button{
+    font-size: 16px;
+}
+
+.mobile-menu-lower ul li{
+    line-height: 40px;
+}
+.mobile-dropdown{
+    font-size: 16px;
+}
+
+.Buttons{
+    margin: 20px 0px;
+    text-align: center;
+}
+
+.register-button button{
+   border: 1.5px solid var(--MediumGray);
+    border-radius: 10px;
+    padding: 11px;
+    width: 86px;
+    width: 150px;
+}
+
+.close
+{
+   display: flex;
+   justify-content: right;
+}

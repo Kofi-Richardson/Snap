@@ -1,0 +1,41 @@
+
+:root{
+    /* colors  */
+    --AlmostWhite: hsl(0, 0%, 98%);
+    --MediumGray: hsl(0, 0%, 41%);
+    --AlmostBlack: hsl(0, 0%, 8%);
+
+
+    /* FontWeight */
+    --200:200;
+    --300:300;
+    --400:400;
+    --500:500;
+    --600:600
+    --700: 700;
+
+    /* FontSize  */
+    --paragraph : 18px;
+
+    /* Fonts  */
+    --Epilouge:'Epilogue', sans-serif;
+
+    /* Device width  */
+
+    --Mobile: 375px;
+    --Desktop: 1440px;
+    
+}
+
+.appContainer{
+    background-color:var(--AlmostWhite) ;
+    height: 100vh;
+   
+}
+
+@media screen and(max-width:375px){
+    .appContainer{
+        width: 375px;
+         position: relative;
+    }
+}

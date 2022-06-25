@@ -1,18 +1,22 @@
-import React from "react"
-// import ReactDOM from "react-dom"
-import Header from './Components/Header'
-import Banner from './Components/Banner'
-import Feature from "./Components/Feature"
-import {ReactComponet as Icon} from './images/icons-todo.svg'
+import React from "react";
+import Header from "./Components/Header";
+import Banner from "./Components/Banner";
+import MobileMenu from "./Components/MobileMenu";
+// import Feature from "./Components/Feature"
+import "./App.css";
 
 export default function App() {
-   
+  //  const fetchData = ()=> fetch('https://catfact.ninja/fact')
+  //     .then(res=> res.json())
+  //     .then(data=> console.log(data))
+  //     .catch(res=> console.log('ERROR'))
+
+  //   fetchData()
 
   return (
-    <div>
+    <div className="appContainer">
       <Header />
       <Banner />
-      <Feature icon='./images/icon-todo.svg'/>
     </div>
-  )
+  );
 }
